@@ -1,5 +1,5 @@
 # gdambic-rvs19-spa-dz-02
-<br>**Game of life**
+**Game of life**<br>
 Igrica koja se sastoji od paljenja i gasenja celija po 3 jednostavna pravila:
 <br>**1.** Ako upaljena celija pored sebe ima manje od dvije ili vise od tri upaljene celije ugasit ce se.
 <br>**2.** Ako upaljena celija pored sebe ima 2 ili 3 upaljene celije ona ostaje upaljena.
