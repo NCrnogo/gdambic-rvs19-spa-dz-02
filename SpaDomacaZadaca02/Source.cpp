@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include "Gofl.h"
 
 int main()
@@ -6,6 +7,8 @@ int main()
 	sf::RenderWindow window(sf::VideoMode(900, 900), "Hello, SFML world!");
 	window.setFramerateLimit(60);
 	Gofl gofl(&window);
+
+	std::cout << "Za ubrzanje stisnite strelicu dolje, a za usporenje strelicu gore";
 
 	while (window.isOpen())
 	{

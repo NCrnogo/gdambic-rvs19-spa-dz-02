@@ -15,7 +15,14 @@ void Gofl::draw()
 	text();
 	drawBoard();
 	Time counter = frameClock.getElapsedTime();
-	Time stop = seconds(1.00f);
+	Time manage = seconds(0.10f);
+	if (Keyboard::isKeyPressed(Keyboard::Up)) {
+		stop += manage;
+		setTime();
+	}if (Keyboard::isKeyPressed(Keyboard::Down)) {
+		stop -= manage;
+		setTime();
+	}
 	if (counter >= stop) {
 		Change();
 		frameClock.restart();
@@ -51,6 +58,15 @@ void Gofl::drawBoard()
 
 }
 
+void Gofl::setTime()
+{
+	if (stop <= seconds(0.00f)) {
+		stop = seconds(0.00f);
+	}if (stop >= seconds(5.00f)) {
+		stop = seconds(5.00f);
+	}
+}
+
 void Gofl::text()
 {
 	int counter=0;
@@ -68,11 +84,17 @@ void Gofl::text()
 		cout << "Morate ubaciti font kako bi mogao ispisati vrijednosti";
 	}
 	else {
-		string help = "Zivih celija ima " +  to_string(counter);
+		string help = "Zivih celija ima " + to_string(counter);
+		string help2 = "Brzina: " + to_string(stop.asSeconds());
 		Text text;
 		text.setFont(font);
 		text.setPosition(350, 0);
 		text.setString(help);
+		window->draw(text);
+		Text text2;
+		text.setFont(font);
+		text.setPosition(740, 0);
+		text.setString(help2);
 		window->draw(text);
 	}
 }
