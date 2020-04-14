@@ -18,4 +18,4 @@ Unutar duple for petlje koja je sluzila za kreiranje grafickog prikaza celije sa
 
 **Kako testirati pravila za Game of life:**
 Trebate napraviti kopiju varijable nesto[40][40] (Ja cu je zvati nesto2[40][40]) te napraviti duplu for petlju koja se krece po cjelom nesto2[x][y]. Kada imate npr nesto[5][5] napravite if upite koji 1. i 2. broj matrice mjenja tako da prode po svim celijama oko odabrane celije te gledaja jesu li te celije pored 0 ili 1 to jest zive ili mrtve te ako su zive da ima neki counter te na kraju taj counter pomocu ifova kaze sto ce se desiti s tom celijom po pravilima Game of life, ali rjesenje koje nam counter da ide u nesto[x][y], a ne u nesto2.<br>
-**Ifovi moraju proci kroz: -x y,-x +y,-x -y,x +y,x -y, +x -y,+x y,+x -y (pazite da x nije 0 jer ne mozete imati da je -x jer je to -1 ili 40 aka +x jer je to 41 i to ide izvan granica ista stvar vrijedi i za y)**
+**Ifovi moraju proci kroz: -x y,-x +y,-x -y,x +y,x -y, +x -y,+x y,+x -y (pazite da x nije 0 jer ne mozete imati da je -x jer je to -1 ili 40 aka +x jer je to 41 i to ide izvan granica. Ista stvar vrijedi i za y)**
