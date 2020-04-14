@@ -6,7 +6,7 @@ Igrica koja se sastoji od paljenja i gasenja celija po 3 jednostavna pravila:
 <br>**3.** Ako ugasena celija pored sebe ima 3 upaljene celije i ona ce se upaliti.
 
 **Kako napraviti graficki prikaz celija:**
-Kako bi u SFML-u napravio graficki prikaz celija koristiomo tip podatka rectangle te od njega kreiramo matricu 40x40 (RectangleShape rectangle[40][40]) te sam pomocu duple for petlji i pomocu funkcije setPosition() poredamo sve kvadrate kako bi imali dobar vizualni prikaz za Game of life.
+Kako bi u SFML-u napravio graficki prikaz celija koristiomo tip podatka rectangle te od njega kreiramo matricu 40x40 (RectangleShape rectangle[40][40]) te pomocu duple for petlji i pomocu funkcije setPosition() poredamo sve kvadrate kako bi imali dobar vizualni prikaz za Game of life.
 
 **Kako dobiti zive i mrtve celije:**
 Zive i mrtve celije dobijemo tako da napravimo jednostavnu matricu intova 40x40 (int nesto[40][40]) te u njih pomocu rand() funkcije stavimo nasumicne brojeve od 0-3. Rand radi od 0-3 jer je dio zadatka da kada se kod pokrene 25% celija budu zive celije. Te sam ja odlucio da su sve celije koje su nula zive, a sve iznad mrtve.
