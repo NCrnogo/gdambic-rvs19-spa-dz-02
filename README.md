@@ -1,9 +1,9 @@
 # gdambic-rvs19-spa-dz-02
 **Game of life**
 Igrica koja se sastoji od paljenja i gasenja celija po 3 jednostavna pravila:
-**1.** Ako upaljena celija pored sebe ima manje od dvije ili vise od tri upaljene celije ugasit ce se.
-**2.** Ako upaljena celija pored sebe ima 2 ili 3 upaljene celije ona ostaje upaljena.
-**3.** Ako ugasena celija pored sebe ima 3 upaljene celije i ona ce se upaliti.
+<br>**1.** Ako upaljena celija pored sebe ima manje od dvije ili vise od tri upaljene celije ugasit ce se.
+<br>**2.** Ako upaljena celija pored sebe ima 2 ili 3 upaljene celije ona ostaje upaljena.
+<br>**3.** Ako ugasena celija pored sebe ima 3 upaljene celije i ona ce se upaliti.
 
 **Kako napraviti graficki prikaz celija:**
 Kako bi u SFML-u napravio graficki prikaz celija koristiomo tip podatka rectangle te od njega kreiramo matricu 40x40 (RectangleShape rectangle[40][40]) te sam pomocu duple for petlji i pomocu funkcije setPosition() poredamo sve kvadrate kako bi imali dobar vizualni prikaz za Game of life.
